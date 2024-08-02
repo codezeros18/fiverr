@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+
+  color-scheme: light dark;
+  color: black;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.dropdown-enter {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.dropdown-enter-active {
+  max-height: 500px; /* or any maximum height that will fit your content */
+  opacity: 1;
+}
+
+.dropdown-exit {
+  max-height: 500px; /* should match the maximum height in .dropdown-enter-active */
+  opacity: 1;
+  transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.dropdown-exit-active {
+  max-height: 0;
+  opacity: 0;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slide > div {
+  width: 100%;
+}
